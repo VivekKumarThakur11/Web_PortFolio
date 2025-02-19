@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek's Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="home">
+    <nav class="navbar">
+        <h2 style="color:#F6DED8">Vivek's Portfolio</h2>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#PProfile">Profile</a>
+            <a href="#SSubscribe">Subscribe</a>
+        </div>
+    </nav>    
+    <div class="header-container">
+        <h2 id="intro"></h2>
+        <button id="darkModeBtn" onclick="toggleDarkMode()">Switch Mode</button>
+    </div>    
+    <h2 id="webIntro">Introduction to Web Technologies</h2>
+    <h3>Web Technologies</h3>
+    </section>
+    <div class="FirstDiv">
+        <img src="./webDevLogo.jpg" class="img-wrap" height="200" src="Web Dev Logo" >
+        <p>Web Technology refers to the various tools and techniques that are utilized in the process of communication between different types of devices over the Internet. A web browser is used to access web pages. Web browsers can be defined as programs that display text, data, pictures, animation, and video on the Internet. Hyperlinked resources on the World Wide Web can be accessed using software interfaces provided by Web browsers.</p>
+    </div>
+    <h4 style="text-decoration:underline">Web Technology can be Classified into the Following Sections:</h4>
+    <ul>
+        <li><span style="font-weight:bold">World Wide Web (WWW):</span> The World Wide Web is based on several different technologies: Web browsers, Hypertext Markup Language (HTML), and Hypertext Transfer Protocol (HTTP).</li>
+        <li><span style="font-weight:bold">Web Server: </span>Web server is a program which processes the network requests of the users and serves them with files that create web pages. This exchange takes place using Hypertext Transfer Protocol (HTTP).</li>
+        <li><span style="font-weight:bold">Web Pages:</span> A webpage is a digital document that is linked to the World Wide Web and viewable by anyone connected to the internet has a web browser.</li>
+        <li><span style="font-weight:bold">Web Development:</span> Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</li>
+    </ul>
+    <div>
+        <h3 style="text-decoration:underline">The role of HTML, CSS, and JavaScript in Web development:</h3>
+        <p>HTML, CSS, and JavaScript are essential languages in web development. Each language serves a specific purpose, enabling developers to create dynamic and visually appealing websites.</p>
+        <h4 style="text-decoration:underline">HTML</h4>
+        <div class="FirstDiv">
+            <img src="./html_logo.png"  height="200" src="html logo" >
+            <p>HTML, or Hypertext Markup Language, is the backbone of web pages. It provides the structure and content of a website, allowing developers to define headings, paragraphs, images, and links. Without HTML, a website would lack structure, making it difficult to navigate and understand.</p>
+        </div>
+        <h4 style="text-decoration:underline">CSS</h4>
+        <div class="FirstDiv">
+            <img src="./Css_Logo.png" height="200" alt="css logo" >
+            <p>CSS, or Cascading Style Sheets, is responsible for the visual presentation of a website. It allows developers to enhance the user experience by customizing colors, fonts, layouts, and animations. CSS provides developers with a wide range of properties and options to create visually stunning user interfaces.</p>
+        </div>
+        <h4 style="text-decoration:underline">JavaScript</h4>
+        <div class="FirstDiv">
+            <img src="./jsNewlogo.png" height="200" alt="Javascript Logo" >
+            <p>JavaScript adds interactivity and functionality to websites. With JavaScript, developers can create dynamic elements, validate forms, handle events, and add multimedia content. It enables the creation of interactive features that enhance user engagement and improve overall user experience.</p>
+            <br>
+        </div>
+        <p>When choosing a coding language, developers consider factors such as expressiveness, reliability, and performance. HTML, CSS, and JavaScript are widely supported by all major browsers and have extensive documentation and resources available. They are easy to learn and use, making them ideal for both beginners and experienced developers.</p>
+        
+    </div>    
+    <section id="PProfile"></section>
+    <h2>Personal Profile</h2>
+    <div class="SecondDiv">
+        <div class="profile">
+            <img src="./Profile_pic.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-text">
+            <p>Hello, I'm Vivek Kumar Thakur.</p>
+            <h4>About Me</h4>
+            <p>I am pursuing BTech in Information Technology at Rajiv Gandhi Institute of Petroleum Technology, Jais. I am passionate about coding, problem-solving, and exploring emerging technologies. I enjoy working on projects that enhance my technical skills, especially in software development, data structures, and web technologies.</p>
+        </div>
+    </div>
+    </section>
+    <h4>Education and Skills</h4>
+    <h5>Educational Details</h5>
+    <table>
+        <tr>
+            <th>Degree</th>
+            <th>Completion Year</th>
+            <th>Institute</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>B.tech</td>
+            <td>2027</td>
+            <td>RGIPT,Jais</td>
+            <td>8.95(till 3rd Sem)</td>
+        </tr>   
+        <tr>
+            <td>12th</td>
+            <td>2022</td>
+            <td>Krishna Public School,Patna</td>
+            <td>89.80%</td>
+        </tr> 
+        <tr>
+            <td>10th</td>
+            <td>2020</td>
+            <td>Patna Doon Public School, Patna</td>
+            <td>95.40%</td>
+        </tr> 
+    </table>
+    <h5>Skills</h5>
+    <div class="progress-bar"><div class="progress html">HTML - 95%</div></div>
+    <div class="progress-bar"><div class="progress css">CSS - 90%</div></div>
+    <div class="progress-bar"><div class="progress js">JavaScript - 80%</div></div>
+    <div class="progress-bar"><div class="progress cpp">C++ - 100%</div></div>
+    <div class="progress-bar"><div class="progress dsa">DSA - 65%</div></div>
+    <div class="progress-bar"><div class="progress python">Python - 80%</div></div>
+    <div class="progress-bar"><div class="progress c">C - 100%</div></div>
+    <section id="SSubscribe">
+    <h4>Subscribe to me</h4>
+    <form id="subscribe-form">
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="email" id="email" placeholder="Enter your email">
+        <button type="button" onclick="validateForm()">Subscribe</button>
+        <p id="message"></p>
+    </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+.header-container 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .FirstDiv, .SecondDiv 
+        {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: #F6DED8;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+
+        .FirstDiv img, .SecondDiv .profile img 
+        {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+
+        .FirstDiv p, .SecondDiv .profile-text 
+        {
+            flex: 1;
+            max-width: 70%;
+        }
+
+        @media (max-width: 1024px) 
+        {
+            .FirstDiv, .SecondDiv 
+            {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            .FirstDiv p, .SecondDiv .profile-text 
+            {
+                max-width: 100%;
+            }
+        
+            .header-container 
+            {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        
+            #darkModeBtn 
+            {
+                margin-top: 10px;
+            }
+        }
+        
+        @media (max-width: 768px) 
+        {
+            body 
+            {
+                margin: 15px;
+            }
+        
+            h2, h3, h4, h5 
+            {
+                font-size: 1.2em;
+            }
+        
+            .profile img 
+            {
+                width: 150px;
+            }
+        
+            #subscribe-form input 
+            {
+                width: 100%;
+            }
+        
+            .progress-bar 
+            {
+                width: 90%;
+            }
+        }
+
+        body 
+        {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin: 25px;
+            background-color: #FCF3F0;
+            color: #333;
+            transition: background-color 0.6s, color 0.3s;
+        }
+        .dark-mode 
+        {
+            background-color: #222;
+            color: #F6DED8;
+        }
+        .dark-mode td 
+        {
+            color: #D2665A;
+        }
+
+        .dark-mode .FirstDiv,.dark-mode .SecondDiv 
+        {
+            background-color: #333;
+            color: #F6DED8;
+        }
+        
+        .dark-mode .FirstDiv p,.dark-mode .SecondDiv p 
+        {
+            color: #F6DED8;
+        }
+
+        .navbar 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #B82132;
+            padding: 15px;
+            color: #F6DED8;
+        }
+        .nav-links 
+        {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a 
+        {
+            color: #F6DED8;
+            text-decoration: none;
+        }
+        .menu-icon 
+        {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) 
+        {
+            .nav-links 
+            {
+                display: none;
+                flex-direction: column;
+                background-color: #B82132;
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                text-align: center;
+                padding: 10px 0;
+                border-radius: 10px;
+            }
+            .nav-links a 
+            {
+                padding: 10px;
+                display: block;
+            }
+            .nav-links.active 
+            {
+                display: flex;
+            }
+            .menu-icon 
+            {
+                display: block;
+            }
+        }
+
+
+        h2, h3, h4, h5 
+        {
+            color: #B82132;
+        }
+        table 
+        {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #F6DED8;
+            border-radius: 3%;
+        }
+        th, td 
+        {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #B82132;
+        }
+        th 
+        {
+            background-color: #D2665A;
+            color:#F6DED8;
+            border-radius: 3%;
+        }
+        .progress-bar 
+        {
+            width: 100%;
+            background-color:lightgray;
+            border-radius: 7px;
+            margin: 8px 0;        
+        }
+        .progress 
+        {
+            text-align: right;
+            padding: 3px;
+            color:black;
+            border-radius: 7px;
+        }
+        .html { width: 95%; background-color: #D2665A; }
+        .css { width: 90%; background-color: #D2665A; }
+        .js { width: 80%; background-color:#F2B28C; }
+        .cpp { width: 100%; background-color: #B82132; }
+        .dsa { width: 65%; background-color: #F6DED8; }
+        .python { width: 80%; background-color: #F2B28C; }
+        .c { width: 100%; background-color: #B82132; }
+        
+        #darkModeBtn 
+        {
+            padding: 10px 15px;
+            background: #B82132;
+            color: #F6DED8;
+            border: none;
+            cursor:pointer;
+            margin: 10px 0;
+            border-radius: 20px;
+        }
+        #darkModeBtn:hover 
+        {
+            background: #D2665A;
+        }
+        #intro 
+        {
+            font-size: 18px;
+            font-weight: bold;
+            min-height: 24px;
+        }
+        #subscribe-form input 
+        {
+            padding: 8px;
+            width: 200px;
+            margin: 5px 0;
+        }
+        #subscribe-form button 
+        {
+            padding: 8px 15px;
+            border-radius:20px;
+            background: #B82132;
+            color:#F6DED8;
+            border: none;
+            cursor: pointer;
+        }
+        #subscribe-form button:hover 
+        {
+            background: #D2665A;
+        }
+        #message 
+        {
+            color: #B82132;
+            font-weight: bold;
+        }
+        .profile-pic 
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit:cover;
+            display:flex;
+        }
+        .profile img 
+        {
+            width: 170px;
+            border-radius: 45%;
+        }
+        #subscribe-form input 
+        {
+            padding: 7px;
+            width: 200px;
+            margin: 5px 0;
+            background-color: #F6DED8;
+            border-radius: 5%;
+            border:none;
+            color: #333;
+        }
+        .FirstDiv 
+        {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color:#F6DED8;
+        }
+        .FirstDiv img 
+        {
+            width:100;
+            height: 150px;
+        }
+        .FirstDiv p 
+        {
+            width: 50%;
+        }
+        .SecondDiv 
+        {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: #F6DED8;
+            padding: 15px;
+        }
+        .SecondDiv .profile img 
+        {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .SecondDiv .profile-text 
+        {
+            flex: 1;
+            max-width: 70%;
+        }
+        .header-container 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
